@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/navs', function () {
+    return view('dash');
+});
+
+// Route::get('/navs', 'TestController@test');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
