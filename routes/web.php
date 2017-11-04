@@ -12,12 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/navs', function () {
     return view('dash');
-});
+})->name('root');
+
+
+// Route::get('/navs', function () {
+//     return view('dash');
+// });
 
 // Route::get('/navs', 'TestController@test');
 

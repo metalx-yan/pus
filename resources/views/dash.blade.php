@@ -9,7 +9,7 @@
   </head>
   <body>
     <nav class="navbar navbar-light bg-light">
-      <span class="navbar-brand mb-0 h1">Larabuk</span>
+      <a href="{{ route('root') }}"><span class="navbar-brand mb-0 h1">Larabuk</span></a>
     </nav>
 
     <div class="jumbotron jumbotron-fluid">
