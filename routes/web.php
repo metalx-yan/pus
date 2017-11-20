@@ -10,17 +10,9 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'BooksController@site')->name('books.site');
 
-Route::get('/', function () {
-    return view('dash');
-})->name('root');
-
-
-// Route::get('/navs', function () {
-//     return view('dash');
-// });
-
-// Route::get('/navs', 'TestController@test');
+Route::resource('/books', 'BooksController');
 
 Auth::routes();
 
